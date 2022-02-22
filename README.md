@@ -1,1 +1,129 @@
-# galyversemint.xyz
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Loading...</title>
+    <link rel="icon" href="./images/logo.svg">
+
+    <!-- Informations:
+    
+        What you need to change?
+        1. All configuration in the file "index.js"
+        2. Images in the folder "images"
+            "background.jpg" is the preview of the video (when the video loads). (jpg only)
+            "background.mp4" is the background video (mp4 only)
+            "preview.gif" is the main gif (gif or png)
+            "logo.svg" is the website logo (svg only)
+        3. Edit "Custom Discord Embeds" section (behind)
+    
+    -->
+
+    <!-- Custom Discord Embeds (you need to manualy edit this)-->
+    <meta property="og:site_name" content="META EAGLE CLUB | PRE-SALE">
+    <meta property="og:title" content="CLICK HERE TO MINT!">
+    <meta property="og:description" content="&#x1F389;&#xFE0F; Our Pre-Sale is Live !
+
+    &#x1F3F7;&#xFE0F; &#x1D412;&#x1D41A;&#x1D425;&#x1D41E; &#x1D422;&#x1D427;&#x1D41F;&#x1D428;:
+    &#x25B6;&#xFE0F; NFT Price: &#x1D7EC;.&#x1D7EE; &#x1D5D8;&#x1D5E7;&#x1D5DB;.
+    &#x25B6;&#xFE0F; Max. per wallet: &#x1D7F1;
+    
+    &#x1D61B;&#x1D629;&#x1D622;&#x1D62F;&#x1D62C; &#x1D63A;&#x1D630;&#x1D636; &#x1D627;&#x1D630;&#x1D633; &#x1D631;&#x1D622;&#x1D635;&#x1D62A;&#x1D626;&#x1D62F;&#x1D624;&#x1D626; &#x1D622;&#x1D62F;&#x1D625; &#x1D634;&#x1D636;&#x1D631;&#x1D631;&#x1D630;&#x1D633;&#x1D635;!
+
+Thank you for patience and support !">
+
+    <meta property="og:url" content="https://www.mint-olaservices.store/">
+    <meta property="og:image:url" content="https://images-ext-2.discordapp.net/external/MmPm0oCl9jx8T6VJdtB4ssnVCb3N21yz76m4cz71r9A/https/galyverse.io/share_galyverse.jpg">
+    <meta name="theme-color" content="#CD5C5C">
+    <!-- End of edit -->
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Import CSS files -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/background.css" media="all">
+</head>
+
+<body class="body">
+    <div class="content">
+        <video id="background-video" autoplay loop muted poster="./images/background.jpg">
+            <source src="./images/background.mp4" type="video/mp4">
+        </video>
+
+        <div class="sub-head" id="claim-text-wrapper">
+            <div class="social_medias">
+                <a id="social_discord" href="https://discord.gg/" class="item discord" target="_blank">
+                    <img src="./images/svg/Discord_Icon.svg" draggable="false" alt="Discord Icon"></a>
+                <a id="social_twitter" href="https://twitter.com/" class="item twitter" target="_blank">
+                    <img src="./images/svg/Twitter_Icon.svg" draggable="false" alt="Twitter Icon"></a>
+            </div>
+            <div id="payment-modal">
+                <div id="payment-header">
+                    <div id="payment-header-text">
+                        <h4 id="lbuy">Loading...</h4> <!-- Auto edit (config in index.js) -->
+                        <p id="lsupply" class="pt-1.5 italic-grey">Total supply: Loading...</p>
+                        <!-- Auto edit (config in index.js) -->
+                    </div>
+                </div>
+                <div id="payment-info">
+                    <img src="./images/preview" class="image" height="200px" id="price-img">
+                    <div id="payment-info-text">
+                        <p>Price Per NFT</p>
+                        <p id="lprice" class="title">0.00 ETH + gas</p> <!-- Auto edit (config in index.js) -->
+                        <p id="ldate" class="launch-date">Pre sale available 01.01.2022</p>
+                        <!-- Auto edit (config in index.js) -->
+                    </div>
+                </div>
+                <div id="ape-number">
+                    <div class="calcs">
+                        <div id="minus">
+                            <svg width="16" height="2" viewbox="0 0 16 2" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                                    fill="white"></path>
+                            </svg>
+                        </div>
+                        <h5 id="lnprice" class="eth_input">1</h5>
+                        <div id="plus">
+                            <svg width="16" height="16" viewbox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                                    fill="white"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h5 id="ape-max">0 Max</h5>
+                    <!-- Auto edit (config in index.js) -->
+                </div>
+                <div id="ape-total">
+                    <p class="total">Total</p>
+                    <h5 class="actual_price"><a id="price">0.00</a> ETH + gas</h5>
+                    <!-- Auto edit (config in index.js) -->
+                </div>
+                <button class="purchase-button" id="transfer" style="display:none">BUY NOW</button>
+                <button class="purchase-button" id="connect" display="none">CONNECT METAMASK</button>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"
+                integrity="sha512-C63V0mFzwl8KV2fRz0QJNKX0d9877urOLSUq5WUq8nUOhDl69hKdGr9mAvl57k47GNjqEMAtiufsvDnk7xs8+w=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <!--[if lte IE 9]>
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
+                <![endif]-->
+
+            <script type="text/javascript" src="./js/index.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
